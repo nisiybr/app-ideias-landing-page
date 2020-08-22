@@ -11,7 +11,7 @@ import {
 const Main: React.FC = () => (
   <Container>
     <Header>
-      <h1>Agência </h1>
+      <h1>Agência</h1>
       <h1>Guilherme Nisiyama</h1>
     </Header>
     <ServicesView>

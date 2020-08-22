@@ -8,6 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%
 `;
 export const Header = styled.header`
   display: flex;
@@ -16,7 +17,7 @@ export const Header = styled.header`
   align-items: flex-start;
   width: 100%;
   height: 400px;
-  padding-left: 20%;
+  padding-left: 3rem;
   background-color: #000;
   background-image: url(${imgHeader});
   background-repeat: no-repeat;
@@ -26,7 +27,7 @@ export const Header = styled.header`
   h1 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #293651;
-    font-size: 96px;
+    font-size: 9.0rem;
     line-height: 112px;
     font-weight: bold;
   }
@@ -38,7 +39,7 @@ export const ServicesView = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 60px;
-  width: 1440px;
+  width: 100%;
 `;
 
 export const HeaderView = styled.div`
@@ -67,7 +68,10 @@ export const ProductsGrid = styled.div`
   margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 85px;
+  grid-gap: 8.5rem;
+  @media(max-width:900px){
+    grid-template-columns: 1fr;
+  }
 `;
 export const Product = styled.button`
   display:flex;
@@ -75,11 +79,11 @@ export const Product = styled.button`
   align-items: flex-start;
   justify-content: flex-start;
   height: 250px;
-  width: 250px;
+  width: 25rem;
   background-color: #fff;
   box-shadow: 1px 2px 16px rgba(0, 0, 0, 0.25);
   border-radius: 21px;
-  padding: 30px;
+  padding: 3rem;
   color: #293651;
   border: 0;
   transition: transform 0.3s;
@@ -109,11 +113,11 @@ export const Product = styled.button`
 
 export const ProductDetails = styled.button`
   height: 600px;
-  width: 250px;
+  width: 25rem;
   background-color: #fff;
   box-shadow: 1px 2px 16px rgba(0, 0, 0, 0.25);
   border-radius: 21px;
-  padding: 30px;
+  padding: 3rem;
   color: #293651;
   display: flex;
   flex-direction: column;
@@ -172,7 +176,7 @@ export const FeatureItem = styled.div`
 
 `;
 export const FormView = styled.div`
-  width: 1440px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

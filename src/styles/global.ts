@@ -8,6 +8,23 @@ export default createGlobalStyle`
     box-sizing: border-box;
     outline: 0;
   }
+  html {
+    font-size: 62.5%;
+  }
+
+  @media (max-width: 1080px) {
+    html {
+      font-size: 58%;
+    }
+  }
+
+  @media (max-width: 720px) {
+    html {
+      font-size: 54%;
+    }
+  }
+
+
   /* Configurações de Cores */
   body {
     background: #fff;

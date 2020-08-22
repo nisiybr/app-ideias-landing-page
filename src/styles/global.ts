@@ -23,6 +23,16 @@ export default createGlobalStyle`
       font-size: 54%;
     }
   }
+  @media (max-width: 500px) {
+    html {
+      font-size: 48%;
+    }
+  }
+  @media (max-width: 400px) {
+    html {
+      font-size: 44%;
+    }
+  }
 
 
   /* Configurações de Cores */

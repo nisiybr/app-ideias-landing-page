@@ -17,7 +17,6 @@ export const Header = styled.header`
   align-items: flex-start;
   width: 100%;
   height: 400px;
-  padding-left: 3rem;
   background-color: #000;
   background-image: url(${imgHeader});
   background-repeat: no-repeat;
@@ -27,9 +26,10 @@ export const Header = styled.header`
   h1 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #293651;
-    font-size: 9.0rem;
-    line-height: 112px;
+    font-size: 7.6rem;
+    line-height: 11.2rem;
     font-weight: bold;
+    margin-left: 6rem;
   }
 `;
 
@@ -56,12 +56,12 @@ export const HeaderView = styled.div`
   span {
     color: #10AC95;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2.5rem;
   }
   strong{
     color: #293651;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 5rem;
   }
 `;
 export const ProductsGrid = styled.div`
@@ -69,7 +69,7 @@ export const ProductsGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 8.5rem;
-  @media(max-width:900px){
+  @media(max-width:1000px){
     grid-template-columns: 1fr;
   }
 `;
@@ -83,7 +83,7 @@ export const Product = styled.button`
   background-color: #fff;
   box-shadow: 1px 2px 16px rgba(0, 0, 0, 0.25);
   border-radius: 21px;
-  padding: 3rem;
+  padding: 4rem;
   color: #293651;
   border: 0;
   transition: transform 0.3s;
@@ -94,7 +94,7 @@ export const Product = styled.button`
 
   h1 {
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 21px;
     font-weight: bold;
   }
@@ -102,7 +102,7 @@ export const Product = styled.button`
   p {
     margin-top: 15px;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 19px;
     text-align: left;
   }
@@ -113,7 +113,7 @@ export const Product = styled.button`
 
 export const ProductDetails = styled.button`
   height: 600px;
-  width: 25rem;
+  width: 30rem;
   background-color: #fff;
   box-shadow: 1px 2px 16px rgba(0, 0, 0, 0.25);
   border-radius: 21px;
@@ -131,14 +131,14 @@ export const ProductDetails = styled.button`
 
   h1 {
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 23px;
     font-weight: bold;
   }
   h3 {
     margin-top: 20px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 16px;
     color: #646F87;
     padding-bottom: 3px;
@@ -149,7 +149,7 @@ export const ProductDetails = styled.button`
     margin-top: 20px;
     color: #10AC95;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 28px;
 
   }
@@ -169,6 +169,7 @@ export const FeatureItem = styled.div`
     margin-right: 10px;
     width: 160px;
     text-align: left;
+    font-size: 1.6rem;
   }
   svg {
     margin-right: 10px;
@@ -188,19 +189,23 @@ export const FormBackground = styled.div`
 margin-top: 90px;
 display: flex;
 flex-direction: column;
+width: 60.2rem;
 
-width: 620px;
+@media(max-width:800px) {
+    width: 35rem;
+}
+
 height: 590px;
 padding: 30px;
 
 background: #FFFFFF;
 box-shadow: 1px 2px 16px rgba(0, 0, 0, 0.25);
 border-radius: 21px;
-margin-bottom: 50px;
+margin-bottom: 5rem;
 
 h1 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 23px;
   color: #293651;
   margin-bottom: 40px;
@@ -211,9 +216,11 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
 
+
+
   label {
     color: #293651;
-    font-size: 14px;
+    font-size: 1.3rem;
     line-height: 16px;
     font-weight: bold;
     margin-left: 10px;
@@ -221,22 +228,22 @@ export const Form = styled.form`
   }
 
   input {
-    padding: 10px;
+    padding: 1rem;
     border-radius: 10px;
     border: 1px solid #646F87;
     margin-top: 5px;
     margin-bottom: 30px;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 16px;
 
   }
 
   textarea {
-    padding: 10px;
+    padding: 1rem;
     border-radius: 10px;
     border: 1px solid #646F87;
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 16px;
     margin-bottom: 70px;
 
@@ -252,7 +259,7 @@ export const ButtonView = styled.div`
       width: 150px;
       height: 40px;
 
-      font-size: 14px;
+      font-size: 1.4rem;
       line-height: 16px;
       color: #FFFFFF;
       font-weight: bold;
@@ -280,7 +287,7 @@ export const Footer = styled.footer`
     margin-top: 30px;
     color: #646F87;
     font-weight: bold;
-    font-size: 27px;
+    font-size: 2.4rem;
     line-height: 32px;
   }
 `;
@@ -290,21 +297,25 @@ export const SocialNetwork = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  width: 25%;
+
 
   button {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 50px;
+    height: 5rem;
+    width: 5rem;
     background-color: #EAEAED;
-    border-radius: 90px;
+    border-radius: 50%;
     border: 0;
 
 
     &:hover {
       background-color: #10AC95;
     }
+
   }
+  button + button {
+      margin-left: 1rem;
+    }
 `;
